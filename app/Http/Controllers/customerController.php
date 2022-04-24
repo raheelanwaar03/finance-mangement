@@ -15,14 +15,9 @@ class customerController extends Controller
      */
     public function index()
     {
-        $positivebalance = trancation::where('sum', 'in')->sum('amount');
-        $negitivebalance = trancation::where('sum', 'out')->sum('amount');
 
-        $balance = $positivebalance - $negitivebalance;
-        
         $customers = customer::where('role', 'customer')->get();
-        return view('user.showCustomer', compact('customers')
-            , compact('balance'));
+        return view('user.showCustomer', compact('customers'));
     }
  
     /**

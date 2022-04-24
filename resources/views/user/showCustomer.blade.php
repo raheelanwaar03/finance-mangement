@@ -28,7 +28,7 @@
                 </a>
             </td>
             <td>{{ $customer->email }}</td>
-            <td>{{ $balance }}</td>
+            <td>{{ balance($customer->id) }}</td>
             <td>{{ $customer->address }}</td>
             <td>{{ $customer->phone }}</td>
             <td>{{ $customer->bussiness }}</td>
