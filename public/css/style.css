@@ -1,0 +1,20 @@
+.side-bar
+{
+    background-color: rgb(25, 25, 216);
+    width: 270px;
+    height: 100vh;
+}
+ul li a.color1
+{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid rgb(194, 194, 194);
+}
+ul li a.color1:hover
+{
+    background-color: rgb(80, 61, 253);
+    color: white;
+}
+
