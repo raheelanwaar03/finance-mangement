@@ -25,18 +25,9 @@
                              <li class="nav-item">
                                 <a class="nav-link color1" href="{{ route('admin.index') }}">See All Users</a>
                             </li>
-                            {{-- <li class="nav-item">
-                                <a class="nav-link color1" href="{{ route('admin.create') }}">Add Customers</a>
-                            </li>
                             <li class="nav-item">
-                                <a class="nav-link color1" href="{{ route('admin.index') }}">See All Customers</a>
-                            </li> --}}
-                            {{-- <li class="nav-item">
-                                <a class="nav-link color1" href="{{ route('admin.addBalance',['id'=>$customer->id]) }}">Add Balance To Customer</a>
-                            </li> --}}
-                            {{-- <li class="nav-item">
-                                <a class="nav-link color1" href="{{ route('userShow') }}">All Users</a>
-                            </li> --}}
+                                <a class="nav-link color1" href="{{ route('admin.loginUser') }}">Login Users</a>
+                            </li>
                             <li class="nav-item">
                                 <form action="{{ route('logout') }}" method="POST">
                                     @csrf

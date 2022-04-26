@@ -52,6 +52,15 @@ class AdminMangmentController extends Controller
 
         return redirect()->back()->with('success', 'User Created Successfully');
     }
+    public function loginUser()
+    {
+        $users = User::select("*")
+                        ->whereNotNull('last_seen')
+                        ->orderBy('last_seen', 'DESC')
+                        ->paginate(10);
+          
+        return view('admin.loginUser', compact('users'));
+    }
 
     /**
      * Display the specified resource.

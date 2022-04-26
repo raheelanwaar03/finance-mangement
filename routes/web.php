@@ -19,12 +19,12 @@ Route::get('/', function () {
 
 Route::get('/dashboard', function () {
     return view('dashboard');
-})->middleware(['auth','user'])->name('dashboard');
+})->middleware(['auth','user','loginUser'])->name('dashboard');
 
 
 Route::get('/admin/dashboard', function () {
     return view('admin.dashboard');
-})->middleware(['auth','admin'])->name('admin.dashboard');
+})->middleware(['auth','admin','loginUser'])->name('admin.dashboard');
 
 require __DIR__.'/auth.php';
 require __DIR__.'/user.php';
